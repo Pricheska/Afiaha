@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Netology.homeworks.AfishaManagerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.186 s <<< FAILURE! - in Netology.homeworks.AfishaManagerTest
-test  Time elapsed: 0.171 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: array lengths differ, expected: <1> but was: <3>
-	at Netology.homeworks.AfishaManagerTest.test(AfishaManagerTest.java:21)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s - in Netology.homeworks.AfishaManagerTest

@@ -34,4 +34,35 @@ public class AfishaManagerTest {
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void ShouldFindAllIfAddedFewerThanLimit() {
+        AfishaManager manager = new AfishaManager(3);
+        manager.addFilms(film1);
+        manager.addFilms(film2);
+        String[] expected = {"First", "Second",};
+        String[] actual = manager.findAll();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void ShouldFindAllIfAddedMoreThanLimit() {
+        AfishaManager manager = new AfishaManager(2);
+        manager.addFilms(film1);
+        manager.addFilms(film2);
+        manager.addFilms(film3);
+        String[] expected = {"Third", "Second"};
+        String[] actual = manager.findLast();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void ShouldFindAllIfAddedLimitAmount() {
+        AfishaManager manager = new AfishaManager(2);
+        manager.addFilms(film1);
+        manager.addFilms(film2);
+        String[] expected = {"First", "Second"};
+        String[] actual = manager.findAll();
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
